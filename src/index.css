@@ -11,3 +11,438 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.topbar-container{
+    width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 4px 2px rgb(236, 235, 235);
+  box-sizing: border-box;
+  z-index: 9;
+}
+
+.indices-container {
+  flex-basis: 38%;
+  height: 100%;
+  padding: 10px 20px;
+  border-right: 1px solid rgb(224, 224, 224);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Nifty{
+  display:flex;
+  justify-content: center;
+}
+
+.indices{
+  padding-right:1rem;
+}
+
+.amount{
+  color:red;
+}
+
+.sensex{
+  display:flex;
+}
+
+.img{
+  width:40px;
+  padding-left:1rem;
+}
+
+
+
+.menu-container{
+
+ display:flex;
+ align-items:center;
+ 
+}
+
+.menus ul{
+  list-style-type:none;
+  display:flex;
+}
+
+.menus li{
+  margin-right:20px;
+  font-size: 0.9rem;
+}
+
+
+.selectedmenu{
+  display:flex;
+  list-style-type: none;
+}
+
+.userid-container{
+  display:flex;
+ align-items: center;
+ justify-content: space-evenly;
+}
+
+.userid-container .user-logo{
+  
+  border-radius:100%;
+  color:white;
+  background-color:lightpink;
+  height:30px;
+  width:30px;
+  text-align: center;
+  padding-top: 4px;
+  margin-right: 10px;
+}
+
+.menu {
+ 
+  color: rgb(70, 70, 70);
+}
+.menuselected{
+   color: rgb(245, 104, 52);
+}
+
+.equity-container {
+  display: flex;
+  width:50%;
+  align-items: center;
+  justify-content: space-evenly;  
+}
+
+.equity-container hr{
+  height:70%
+}
+
+.Summary-container {
+ margin-left:400px;
+ padding-left:20px;
+ border-left:1px solid black;
+ margin-top:2px;
+}
+
+.username h6 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(83, 83, 83);
+  margin-bottom: 20px;
+}
+.section {
+  padding-bottom: 2%;
+}
+
+.data {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.data .first h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: rgb(71, 71, 71);
+margin-bottom: 0px;
+margin-top:0px
+}
+
+.data .first p {
+  margin-top:0px;
+  font-size: 0.8rem;
+  color: rgb(136, 136, 136);
+ 
+}
+
+.data .first small {
+  font-size: 0.8rem;
+  color: rgb(72, 194, 55);
+}
+
+.data .first .profit {
+  color: rgb(72, 194, 55);
+}
+.data hr {
+  border-left: 0.6px solid rgb(243, 242, 242);
+  height: 70px;
+}
+
+.data .second p {
+  font-size: 0.8rem;
+  color: rgb(136, 136, 136);
+  margin-bottom: 10px;
+  width:150px
+}
+
+.data .second p span {
+  display: inline;
+  margin-left: 5%;
+  font-size: 0.9rem;
+  color: rgb(100, 100, 100);
+}
+
+.section hr {
+  margin-top: 6%;
+}
+
+.Watchlist-container {
+  width:31%;
+  height:100vh;
+}
+
+.input-container{
+  display:flex;
+  justify-content: space-between;
+  padding:7px;
+  border:1px solid black
+}
+
+.inputs{
+  color:#424242;
+  font-size:0.9rem;
+}
+
+.search{
+border:none;
+  width:80%
+}
+
+.dashboard-container{
+  display:flex;
+}
+
+.content{
+  width:67%;
+  
+  padding-left:25px;
+  height:200vh;
+  border-left: 1px solid #424242;
+}
+
+.orders{
+  text-align: center;
+  padding:30px
+
+}
+
+.inputs{
+  color:#424242
+}
+.list {
+  list-style-type: none;
+  padding-left: 0px;
+  padding-bottom: 12%;
+}
+
+.list li {
+  border-bottom: 0.8px solid rgb(235, 234, 234);
+  padding: 12px 10px 12px 14px;
+  position: relative;
+}
+
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 0.8rem;
+  position: relative;
+  
+}
+
+.itemInfo {
+  display: flex;
+  padding-left:50px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.itemInfo > * {
+  margin-right: 8px;
+}
+
+.itemInfo span:nth-child(1) {
+  color: rgb(141, 141, 141);
+  flex: 1;
+}
+.itemInfo span:nth-child(2) {
+  color: rgb(223, 73, 73);
+  margin-right: 12px;
+  flex: 2;
+}
+.itemInfo span:nth-child(3) {
+  color: rgb(223, 73, 73);
+  flex: 1;
+}
+.down {
+  color: rgb(223, 73, 73);
+}
+.up{
+  color:green
+}
+.item:hover {
+  cursor: pointer;
+}
+.list li:hover {
+  cursor: move;
+  background-color: #f3f3f3;
+}
+.buy {
+  background-color: #4184f3;
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.8rem;
+  border: 0.7px solid #4184f3;
+}
+.sell {
+  background-color: #ff5722;
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.8rem;
+  border: 0.7px solid #ff5722;
+  margin-left:3px;
+}
+
+.icon {
+  transform: scale(0.5);
+  color: rgb(65, 65, 65);
+ font-size:0.5rem;
+}
+.action {
+  background-color: #fff;
+  border: 0.7px solid #9b9b9b;
+  margin-left:3px;
+ font-size: 0.5rem;
+}
+.actions{
+  display:flex;
+  align-items:center;
+  justify-content: space-evenly;
+  overflow-x: hidden;
+}
+
+.row{
+  display:flex;
+  justify-content: space-evenly;
+  padding:50px;
+  align-items: center;
+  text-align: center;
+}
+.order-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.order-table tr {
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid black;
+}
+
+.order-table th {
+ font-size: 0.8rem;
+ color: rgb(145, 145, 145);
+ font-weight: 300;
+  padding: 15px 10px;
+}
+
+.order-table td {
+  padding: 10px 10px;
+  text-align: right;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgb(73, 73, 73);
+}
+.order-table tr th:first-child,
+.order-table tr td:first-child {
+  text-align: left;
+}
+.order-table tr th:nth-child(1),
+.order-table tr th:nth-child(4) {
+  border-right: 1px solid #f1f1f1;
+}
+
+.order-table tr td:nth-child(1),
+.order-table tr td:nth-child(4) {
+  border-right: 1px solid #f1f1f1;
+}
+.order-table td.profit {
+  color: rgb(72, 194, 55);
+}
+.order-table td.loss {
+color:red;
+}
+
+.col {
+  flex-basis: 33%;
+}
+
+.col h5 {
+  font-size: 1.8rem;
+  color: rgb(71, 71, 71);
+  font-weight: 300;
+}
+
+.col h5 span {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.col p {
+  font-size: 0.8rem;
+  color: rgb(153, 153, 153);
+  font-weight: 300;
+  margin-top: 2%;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: #fff;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+.btn-green {
+  background: #4caf50;
+}
+.btn-blue {
+  background: #4184f3;
+}
+
+.funds {
+  width: 100%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.funds p {
+  font-size: 0.8rem;
+  color: rgb(179, 179, 179);
+  margin-right: 8px;
+}
+
+.table {
+  border: 1px solid #ddd;
+ 
+  padding: 5% 8%;
+}
+
+.table .data {
+  display: flex;
+  align-items: center;
+  padding-left:30px;
+  justify-content: space-between;
+}
+
+.table .data > * {
+  margin-bottom: 5%;
+  margin-left: 20px;
+}
