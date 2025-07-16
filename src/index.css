@@ -11,3 +11,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav-link {
+  color:#666666 !important;
+}
+
+.nav-link:hover{
+  color:blue !important;
+}
+
+.footerblink {
+  text-decoration: none;
+  color: #9B9B9B;
+  margin-right: 1rem;
+}
+.footerblink:hover {
+  color: blue;
+}
+
+.Rightimage{
+  margin-top: 4rem;
+}
+
+#Supportwrapper{
+  display:flex;
+  justify-content:space-between;
+  margin:0px 50px;
+}
+
+#Secondwrapper{
+  display:flex;
+  justify-content:space-between;
+  margin:0px 50px;
+}
+
+.inputbox{
+  width:80%;
+  height:3rem;
+  
+}
+
+.supportlinks{
+  margin-right: 2rem;
+  color:white
+}
+
