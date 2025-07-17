@@ -1,20 +1,52 @@
-import React from 'react';
+import React ,  { useState } from 'react';
 
 function Signup() {
-    return ( 
-        <div className="signup-container text-center m-5 p-5"  style={{marginTop:"10px",backgroundColor:"rgb(56,126,209)",borderRadius:"10px",color:"white"}}>
-        <h3 className="p-2">Signup</h3>
-        <form>
-            <div className="Username">
-                <label for="username" >Enter Username :</label>
-                <input type='text' id ="username" placeholder="enter username" required style={{width:"30",height:"40px",borderRadius:"5px",border:"1px solid #ccc",marginLeft:"10px",marginTop:"10px"}}/><br></br>
-                 <label for="password" style={{padding:"5px"}}>Enter Password :</label>
-                 <input type="password" id="password" placeholder='Enter Password' required style={{width:"30%",height:"40px",borderRadius:"5px",border:"1px solid #ccc",marginLeft:"10px",margin:"8px",marginTop:"10px"}}/><br></br>
-                 <button className="btn btn-primary">Sign Up</button>
-            </div>
-        </form>
-        </div>
-     );
+    
+        const [username, setUsername] = useState('');
+        const [password, setPassword] = useState('');
+
+        const handleLogin = () => {
+    // Your login logic
+    console.log('Logging in with', username, password);
+     
+  };
+  const isFormValid = username.trim() !== '' && password.trim() !== '';
+        return ( 
+            <div style={{width:"50%", textAlign: 'center', marginTop: '100px',marginLeft:"300px",backgroundColor:'#007bff', padding: '20px', borderRadius: '10px', color: 'white' }}>
+      <h2>LOGIN</h2>
+
+      <div>
+        <label>Enter Username: </label>
+        <input
+          type="text"
+          placeholder="enter username"
+          value={username} style={{ marginLeft: '10px' }}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+      </div>
+
+      <div style={{ marginTop: '10px' }}>
+        <label>Enter Password: </label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          value={password} style={{ marginLeft: '10px' }}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+      </div>
+
+      <div style={{ marginTop: '15px' }}>
+        <button
+          onClick={handleLogin}
+          disabled={!isFormValid}
+          style={{ backgroundColor: isFormValid ? 'white' : 'gray', color: 'black',border:"2px solid black" }} >
+         <button onClick={()=>window.location.href="http://localhost:3000/dashboard"}  style={{ color:"black",backgroundColor: isFormValid ? 'white' : 'gray',border:"none"}}>Login</button>
+        </button>
+      </div>
+    </div>
+  );
 }
 
 export default Signup;
+        
+    
