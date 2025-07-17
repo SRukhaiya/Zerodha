@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from '../../../../dashboarddata/src/components/Home';
+
 function Signup() {
     return ( 
         <div className="signup-container text-center m-5 p-5"  style={{marginTop:"10px",backgroundColor:"rgb(56,126,209)",borderRadius:"10px",color:"white"}}>
