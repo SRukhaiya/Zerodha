@@ -40,7 +40,7 @@ function Signup() {
           onClick={handleLogin}
           disabled={!isFormValid}
           style={{ backgroundColor: isFormValid ? 'white' : 'gray', color: 'black',border:"2px solid black" }} >
-         <button onClick={()=>window.location.href="http://localhost:3000/dashboard"}  style={{ color:"black",backgroundColor: isFormValid ? 'white' : 'gray',border:"none"}}>Login</button>
+         <button onClick={()=>window.location.href="http://localhost:3001"}  style={{ color:"black",backgroundColor: isFormValid ? 'white' : 'gray',border:"none"}}>Login</button>
         </button>
       </div>
     </div>
